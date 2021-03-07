@@ -1,0 +1,9 @@
+
+---
+- name: Pull and Run docker image of rachit98/hello_world
+  hosts: all
+  tasks:
+    - name: Pull rachit98/hello_world
+      docker_image:
+        name: rachit98/hello_world
+        source: pull
