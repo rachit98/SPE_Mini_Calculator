@@ -11,3 +11,8 @@
 2021-03-12 14:33:19.125 [main] ERROR calculator.Calculator - Number cannot be negative Case of NaN factorial if num is not an integer
 2021-03-12 14:33:19.126 [main] INFO  calculator.Calculator - Result of factorial is: NaN
 2021-03-12 14:33:24.289 [main] INFO  calculator.Calculator - Result of factorial is: 1.0
+2021-03-12 14:56:02.378 [main] INFO  calculator.Calculator - Calculating Square root  of number -1.0
+2021-03-12 14:56:02.385 [main] ERROR calculator.Calculator - Number cannot be negative Case of NaN squareRoot of < 0
+2021-03-12 14:56:02.386 [main] INFO  calculator.Calculator - Result of squareRoot is : NaN
+2021-03-12 14:56:21.353 [main] INFO  calculator.Calculator - Calculating Natural log of 1.0
+2021-03-12 14:56:21.354 [main] INFO  calculator.Calculator - Result of naturalLog is : 0.0
