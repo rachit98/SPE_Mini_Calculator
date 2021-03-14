@@ -82,8 +82,22 @@ public class Calculator {
     public double power(double num1, double num2)
     {
         double output = 0;
-        logger.info("Calculating Power  of two numbers " + num1 + " and " + num2);
-        output = Math.pow(num1, num2);
+        if(num1==0.0&&num2==0.0)
+        {
+            output = Double.NaN;
+            logger.info("0 power 0 is not defined");
+            return output;
+        }
+        try {
+            logger.info("Calculating Power  of two numbers " + num1 + " and " + num2);
+            output = Math.pow(num1, num2);
+            if(output==Double.NaN) {
+                throw new ArithmeticException("Power is not real");
+            }
+        }catch (ArithmeticException ae)
+        {
+            logger.error(ae.getMessage());
+        }
         logger.info("Result of power is : " + output);
         return output;
     }
